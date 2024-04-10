@@ -17,11 +17,14 @@ Entails direct interaction with the target system to collect more detailed infor
  
 ![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/screen-2.gif)
 
-To check if i have any screen sessions open
+To check if I have any screen sessions open.
 ```bash
 screen -ls
 ```
-To start a screen session
+To start a screen session.
 ```bash
 screen -S main
 ```
+HOT KEYS USED
+ctl+a:c = to create a new screen
+ctl+a:spacebar = to switch between screens
