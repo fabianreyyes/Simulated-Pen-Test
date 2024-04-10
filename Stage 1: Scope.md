@@ -1,6 +1,6 @@
 # Scoping
 
-Scoping is the initial phase in the pen-testing process. Precise delineation of your scope is imperative prior to commencing any active penetration testing activities. Within our current simulated environment, access is restricted solely to the Kali boxes on the left. Additionally, we possess the capability to toggle the machines within the target network on/off, optimizing resource utilization within the simulated ecosystem.
+Scoping is the initial phase in the pen-testing process. Staying within your scope is imperative prior to commencing any active penetration testing activities. Within our current simulated environment, access is restricted solely to the Kali boxes on the left. Additionally, we possess the capability to toggle the machines within the target network on/off, optimizing resource utilization within the simulated ecosystem.
 
 ![image](https://github.com/fabianreyyes/Pen-Test/blob/main/media/GNS3Enviroment.png)
 
