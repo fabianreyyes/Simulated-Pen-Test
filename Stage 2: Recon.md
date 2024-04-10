@@ -62,4 +62,19 @@ tee fast_scan: Writes the output of the Nmap scan both to the terminal (standard
 
 Observing that port 22, 53, 80, 445, 5432, and 10000 are accessible on the target IP, determining which port to prioritize for further investigation or exploitation depends on various factors, including objectives, the services running on those ports, and the potential vulnerabilities associated with them. Among these ports, port 80 emerges as the most straightforward for conducting further reconnaissance. Typically, port 80 is linked with web servers, offering a promising avenue for exploration.
 
+### Interacting with target
+
+![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/http_firefox.gif)
+
+To engage with port 80, I entered the target IP into the browser, revealing a web server with a cat picture. As I explored the site, it became evident that it consisted solely of the image. Intrigued, I went into the source code yet found nothing of interest. However, upon further investigation into the server's script, I discovered it was operating on Apache/2.4.52 (Debian), potentially unveiling a promising avenue for exploitation.
+
+Apache/2.4.52 CVE's: https://www.cvedetails.com/vulnerability-list/vendor_id-45/product_id-66/version_id-782030/Apache-Http-Server-2.4.52.html
+
+Following a thorough review of the vulnerability list, we reached the conclusion that there were no easily obtainable CVE entries available to facilitate our quest for Remote Code Execution (RCE) on the target system.
+
+Apache 2.4.52 is a specific version of the Apache web server software. By revealing the exact version number, an attacker gains insight into the software stack used by the target organization. Each software version may have its own set of vulnerabilities and security weaknesses. Attackers can use the disclosed version number to search public vulnerability databases or exploit repositories for known vulnerabilities. Armed with knowledge of the web server version, attackers can tailor their attacks to specifically target vulnerabilities. We would consider the discovery of the web server running apache a low level data leak because it is hard to gain RCE through known vulnerabilities of that apache version.
+
+Remediation: Security Through Obscurity- Organizations often rely on security through obscurity by concealing specific details about their software and infrastructure. The disclosure of the Apache version number undermines this security practice, providing attackers with critical information about the organization's technology stack.
+
 ### 
+
