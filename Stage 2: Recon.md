@@ -41,5 +41,10 @@ I've also included a scope file in my pentest directory, containing the target I
 
 ### Scanning the target
 
-![image]()
+![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/fast_scan.gif)
+
+```bash
+sudo nmap -iL scope -F | tee fast_scan
+```
+
 
