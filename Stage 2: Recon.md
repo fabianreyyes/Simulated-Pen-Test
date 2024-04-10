@@ -61,3 +61,5 @@ tee fast_scan: Writes the output of the Nmap scan both to the terminal (standard
 ### Understanding the scan
 
 Observing that port 22, 53, 80, 445, 5432, and 10000 are accessible on the target IP, determining which port to prioritize for further investigation or exploitation depends on various factors, including objectives, the services running on those ports, and the potential vulnerabilities associated with them. Among these ports, port 80 emerges as the most straightforward for conducting further reconnaissance. Typically, port 80 is linked with web servers, offering a promising avenue for exploration.
+
+### 
