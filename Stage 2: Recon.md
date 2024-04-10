@@ -11,3 +11,5 @@ Involves gathering information without directly interacting with the target syst
 ## Active 
 
 Entails direct interaction with the target system to collect more detailed information. This can include techniques such as network scanning to identify open ports, services, and operating systems, DNS enumeration to discover subdomains and associated IP addresses, and whois queries to obtain information about domain registration.
+
+### Screen
