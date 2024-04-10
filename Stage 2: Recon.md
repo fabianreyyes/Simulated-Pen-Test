@@ -84,5 +84,5 @@ The dirb command is a tool used for web application directory and file enumerati
 dirb http://192.168.122.47
 ```
 
-![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/dirb.gif)
+![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/dirb_output.gif)
 
