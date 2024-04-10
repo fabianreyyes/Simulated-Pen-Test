@@ -26,5 +26,8 @@ To start a screen session.
 screen -S main
 ```
 HOT KEYS USED
+
 ctl+a:c = to create a new screen
+
 ctl+a:spacebar = to switch between screens
+
