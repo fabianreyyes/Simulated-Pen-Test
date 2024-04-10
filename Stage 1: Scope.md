@@ -6,6 +6,12 @@ Scoping is the initial phase in the pen-testing process. Precise delineation of 
 
 SCOPE: 192.168.122.47
 
+## Understanding the enviroment
+
+To the left, we have the attacker group's machines operating Kali Linux at 192.168.122.209.
+
+On the right, the target network resides at 192.168.122.47. Within this network, App1, FS1, DHCP1, and DC1 function as servers, while SOC 1-7 and Dev1 serve as endpoints.
+
 ## Where does the scope come from?
 
 In a penetration testing engagement, the scope is typically defined in collaboration between the client (the organization commissioning the test) and the penetration testing team. Once the scope is established and agreed upon by both parties, it serves as the foundation for planning and conducting the penetration test. It provides clarity on what will be tested, the methodology that will be employed, and the boundaries within which the testing will be conducted.
