@@ -6,7 +6,7 @@ Scoping is the initial phase in the pen-testing process. Precise delineation of 
 
 SCOPE: 192.168.122.47
 
-## Understanding the enviroment
+## Understanding the environment
 
 To the left, we have the attacker group's machines operating Kali Linux at 192.168.122.209.
 
