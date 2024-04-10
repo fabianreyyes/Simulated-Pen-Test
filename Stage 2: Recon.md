@@ -100,4 +100,4 @@ Using the low-level data leak we found earlier, we know that the web server uses
 
 ![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/cmdi.gif)
 
-
+This vulnerability is critical and must be patched immediately because an attacker can quickly gain RCE through this broken web application through command injection.
