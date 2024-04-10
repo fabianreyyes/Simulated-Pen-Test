@@ -88,6 +88,8 @@ dirb http://192.168.122.47
 
 We interacted with several hidden endpoints during our exploration. Upon visiting these endpoints, we encountered a lack of clickable elements or revealing source code, just more images awaited us. After extensive searching, our team discovered an admin portal equipped to read files, provided one possesses appropriate credentials. We tried logging in using default credentials, which unfortunately granted us access. Upon further investigation, we uncovered a critical flaw: the broken web application. We found no user credentials were necessary to access files within the web application. The View.php web app was designed to give administrators file access, but the AdminName and AdminID credential fields remain inactive within the code. This lack of code constitutes a Broken Authentication vulnerability, affording us unauthorized access to sensitive files on the target system without requiring authentication. 
 
+![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/ez_admin.gif)
+
 Remediation: Utilize AdminName and AdminID in view.php code alongside if statement that allows filename interaction if correct credentials are provided.
 
 Our group was able to read all the sensitive files, but nothing of value was discovered to gain RCE.
