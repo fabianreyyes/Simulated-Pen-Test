@@ -46,5 +46,9 @@ I've also included a scope file in my pentest directory, containing the target I
 ```bash
 sudo nmap -iL scope -F | tee fast_scan
 ```
-
-
+sudo: Runs the Nmap command with superuser privileges, which may be necessary to perform certain types of scans or access privileged ports.
+nmap: Invokes the Nmap tool, which is a network scanner used for discovering hosts and services on a computer network.
+-iL scope: Specifies the input file containing a list of target IP addresses or hostnames. In this case, the file is named "scope".
+-F: Initiates a fast scan mode, which scans only the most common ports (100 most common TCP ports).
+|: Pipe symbol, which redirects the output of the preceding command to the input of the following command.
+tee fast_scan: Writes the output of the Nmap scan both to the terminal (standard output) and to a file named "fast_scan".
