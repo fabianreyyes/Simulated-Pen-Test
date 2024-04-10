@@ -35,5 +35,5 @@ ctl+a:spacebar = to switch between screens
 
 Creating a dedicated directory for a penetration testing engagement serves several important purposes. Having a designated directory keeps all relevant files, scripts, tools, and documentation for the engagement in one central location. This makes it easier for the penetration tester to locate and access the necessary resources during the testing process. With all files and data organized in one place, the penetration tester can work more efficiently. They spend less time searching for files or switching between directories, allowing them to focus more on the testing itself. Keeping all engagement-related data confined to a single directory helps maintain data integrity and security. It reduces the risk of accidentally leaving sensitive information scattered across different locations on the system, minimizing the chances of data leakage or unauthorized access.
 
-![image]()
+![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/mkdir_pentest.gif)
 
