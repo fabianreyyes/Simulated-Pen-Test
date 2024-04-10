@@ -76,5 +76,13 @@ Apache 2.4.52 is a specific version of the Apache web server software. By reveal
 
 Remediation: Security Through Obscurity- Organizations often rely on security through obscurity by concealing specific details about their software and infrastructure. The disclosure of the Apache version number undermines this security practice, providing attackers with critical information about the organization's technology stack.
 
-### 
+### Finding hidden endpoints
+
+The dirb command is a tool used for web application directory and file enumeration. It is often employed in penetration testing or security assessments to discover hidden or unlinked resources on a web server. When you run dirb with a specified target URL or IP address, it recursively scans the web server directory structure, attempting to find files and directories that are accessible. It does this by trying various common directory and file names, typically based on a predefined wordlist or dictionary, and then checking the server response for each request. This process helps in identifying potential entry points or vulnerabilities within the web application.
+
+```bash
+dirb http://192.168.122.47
+```
+
+![image]()
 
