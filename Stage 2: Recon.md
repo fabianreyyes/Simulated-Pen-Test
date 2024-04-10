@@ -39,7 +39,7 @@ Creating a dedicated directory for a penetration testing engagement serves sever
 
 I've also included a scope file in my pentest directory, containing the target IP address.
 
-### Scanning the target
+### Scanning the Target
 
 ![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/fast_scan.gif)
 
@@ -58,11 +58,11 @@ nmap: Invokes the Nmap tool, which is a network scanner used for discovering hos
 
 tee fast_scan: Writes the output of the Nmap scan both to the terminal (standard output) and to a file named "fast_scan".
 
-### Understanding the scan
+### Understanding the Scan
 
 Observing that port 22, 53, 80, 445, 5432, and 10000 are accessible on the target IP, determining which port to prioritize for further investigation or exploitation depends on various factors, including objectives, the services running on those ports, and the potential vulnerabilities associated with them. Among these ports, port 80 emerges as the most straightforward for conducting further reconnaissance. Typically, port 80 is linked with web servers, offering a promising avenue for exploration.
 
-### Interacting with target
+### Interacting With the Target
 
 ![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/http_firefox.gif)
 
@@ -76,7 +76,7 @@ Apache 2.4.52 is a specific version of the Apache web server software. By reveal
 
 Remediation: Security Through Obscurity- Organizations often rely on security through obscurity by concealing specific details about their software and infrastructure. The disclosure of the Apache version number undermines this security practice, providing attackers with critical information about the organization's technology stack.
 
-### Finding hidden endpoints
+### Finding Hidden Endpoints
 
 The dirb command is a tool used for web application directory and file enumeration. It is often employed in penetration testing or security assessments to discover hidden or unlinked resources on a web server. When you run dirb with a specified target URL or IP address, it recursively scans the web server directory structure, attempting to find files and directories that are accessible. It does this by trying various common directory and file names, typically based on a predefined wordlist or dictionary, and then checking the server response for each request. This process helps in identifying potential entry points or vulnerabilities within the web application.
 
@@ -85,4 +85,16 @@ dirb http://192.168.122.47
 ```
 
 ![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/dirb_output.gif)
+
+We interacted with several hidden endpoints during our exploration. Upon visiting these endpoints, we encountered a lack of clickable elements or revealing source code, just more images awaited us. After extensive searching, our team discovered an admin portal equipped to read files, provided one possesses appropriate credentials. We tried logging in using default credentials, which unfortunately granted us access. Upon further investigation, we uncovered a critical flaw: the broken web application. We found no user credentials were necessary to access files within the web application. The View.php web app was designed to give administrators file access, but the AdminName and AdminID credential fields remain inactive within the code. This lack of code constitutes a Broken Authentication vulnerability, affording us unauthorized access to sensitive files on the target system without requiring authentication. 
+
+Remediation: Utilize AdminName and AdminID in view.php code alongside if statement that allows filename interaction if correct credentials are provided.
+
+Our group was able to read all the sensitive files, but nothing of value was discovered to gain RCE.
+
+### Command Injection
+
+Using the low-level data leak we found earlier, we know that the web server uses Linux in the background. When we type a file name in the file name field, it runs a command in the background in a specific directory on the Linux machine, which gives us a "cat" command response to read the file. In Linux, we can use characters such as (; & |) to run a follow-on command after the first command runs. In this case we can use those characters to execute command injection on the webserver. 
+
+
 
