@@ -6,6 +6,9 @@ The reconnaissance (recon) stage in penetration testing involves gathering infor
 
 Involves gathering information without directly interacting with the target system. Techniques include searching public sources such as social media, company websites, search engines, and public databases for information like employee names, email addresses, technology in use, and organizational structure.
 
+
+
+
 **Everything beyond this point can be considered a felonly offense if you do not have consent from the victim you are targeting.**
 
 ## Active 
