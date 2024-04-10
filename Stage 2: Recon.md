@@ -37,3 +37,5 @@ Creating a dedicated directory for a penetration testing engagement serves sever
 
 ![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/mkdir_pentest.gif)
 
+I've also included a scope file in my pentest directory, containing the target IP address.
+
