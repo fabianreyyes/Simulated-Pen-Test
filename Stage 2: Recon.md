@@ -98,5 +98,6 @@ Our group was able to read all the sensitive files, but nothing of value was dis
 
 Using the low-level data leak we found earlier, we know that the web server uses Linux in the background. When we type a file name in the file name field, it runs a command in the background in a specific directory on the Linux machine, which gives us a "cat" command response to read the file. In Linux, we can use characters such as (; & |) to run a follow-on command after the first command runs. In this case we can use those characters to execute command injection on the webserver. 
 
+![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/cmdi.gif)
 
 
