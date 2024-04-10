@@ -39,3 +39,7 @@ Creating a dedicated directory for a penetration testing engagement serves sever
 
 I've also included a scope file in my pentest directory, containing the target IP address.
 
+### Scanning the target
+
+![image]()
+
