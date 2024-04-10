@@ -9,7 +9,7 @@ Involves gathering information without directly interacting with the target syst
 
 
 
------ **Everything beyond this point can be considered a felonly offense if you do not have consent from the victim you are targeting.** -----
+---- **Everything beyond this point can be considered a felonly offense if you do not have consent from the victim you are targeting.** ----
 
 ## Active 
 
