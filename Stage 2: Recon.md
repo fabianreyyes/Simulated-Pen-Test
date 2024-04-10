@@ -16,3 +16,12 @@ Entails direct interaction with the target system to collect more detailed infor
  To start an engagment it is important to utilized tools such as screen. Screen allows you to create multiple terminal sessions within a single SSH session or local terminal window. This feature is useful for managing multiple tasks simultaneously, such as running different commands, scripts, or tools in separate sessions without the need to open multiple terminal windows. Screen sessions continue running even if the SSH connection is interrupted or terminated. This means that if the connection drops, the pen tester can reconnect to the server and resume their work without losing any progress. Lastly , screen sessions can log all output from terminal sessions to a file, providing an audit trail of commands executed and output generated during the penetration testing process. This logging feature is valuable for documenting findings, troubleshooting issues, and providing evidence to clients or stakeholders.
  
 ![image](https://github.com/fabianreyyes/Simulated-Pen-Test/blob/main/media/screen-2.gif)
+
+To check if i have any screen sessions open
+```bash
+screen -ls
+```
+To start a screen session
+```bash
+screen -S main
+```
